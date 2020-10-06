@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+    <title>swiper - now on Github!</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+     
+    <!-- Slider main container -->
+    <div id="swiperContainer" class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div id="swiperWrapper" class="swiper-wrapper">
+            <!-- Slides -->
+            <div id="chart_1" class="swiper-slide page_bg"></div>
+            <div id="chart_2" class="swiper-slide page_bg">
+                <div class="buttonContainer">
+                    <button class="button" name="Frage_1" value="Patienteninformation" id="button_1" onClick="onClick_Button(this)">Patienteninformation</button>
+                    <button class="button" name="Frage_1" value="Kongress" id="button_2" onClick="onClick_Button(this)">Medizinische Informationen - Kongress</button>
+                    <button class="button" name="Frage_1" value="Produkt" id="button_3" onClick="onClick_Button(this)">Medizinische Informationen - Produkt</button>
+                    <button class="button" name="Frage_1" value="Studien" id="button_4" onClick="onClick_Button(this)">Medizinische Informationen - Studien</button>
+                    <button class="button" name="Frage_1" value="Gesundheitspolitische Themen" id="button_5" onClick="onClick_Button(this)">Gesundheitspolitische Themen</button>
+                    <button class="button" name="Frage_1" value="Medizinische Fortbildungen" id="button_6" onClick="onClick_Button(this)">Medizinische Fortbildungen</button>
+                    <button class="button" name="Frage_1" value="keine der genannten Informationen" id="button_7" onClick="onClick_Button(this)">keine der genannten Informationen</button>
+                </div>
+            </div>
+            <div id="chart_3" class="swiper-slide page_bg">
+                <div class="buttonContainer">
+                    <button class="button" name="Frage_2" value="MSD Mitarbeiter" id="button_8" onClick="onClick_Button(this)">MSD Mitarbeiter</button>
+                    <button class="button" name="Frage_2" value="Email" id="button_9" onClick="onClick_Button(this)">Email</button>
+                    <button class="button" name="Frage_2" value="Internetplattform (z.B. MSD-Connect)" id="button_10" onClick="onClick_Button(this)">Internetplattform (z.B. MSD-Connect)</button>
+                    <button class="button" name="Frage_2" value="Telefon" id="button_11" onClick="onClick_Button(this)">Telefon</button>
+                    <button class="button" name="Frage_2" value="Videokonferenz" id="button_12" onClick="onClick_Button(this)">Videokonferenz</button>
+                    <button class="button" name="Frage_2" value="Newsletter" id="button_13" onClick="onClick_Button(this)">Newsletter</button>
+                </div>
+            </div>
+            <div id="chart_4" class="swiper-slide page_bg">
+                <div class="buttonContainer">
+                    <button class="button" name="Frage_3" value="Facebook" id="button_14" onClick="onClick_Button(this)">Facebook</button>
+                    <button class="button" name="Frage_3" value="LinkedIn" id="button_15" onClick="onClick_Button(this)">LinkedIn</button>
+                    <button class="button" name="Frage_3" value="Twitter" id="button_16" onClick="onClick_Button(this)">Twitter</button>
+                    <button class="button" name="Frage_3" value="WhatsApp" id="button_17" onClick="onClick_Button(this)">WhatsApp</button>
+                    <button class="button" name="Frage_3" value="Xing" id="button_18" onClick="onClick_Button(this)">Xing</button>
+                    <button class="button" name="Frage_3" value="Anderer Social Media Kanal" id="button_19" onClick="onClick_Button(this)">Andere</button>
+                     <div style="margin-left: 60px;">
+                        <form>
+                            <input class="textInput" type="text" name="Frage_3" id="text_19"  onKeyUp="onChangeText(this)" onKeyDown="onKeyDown(event)">
+                        </form>
+                    </div>
+                    <button class="button" name="Frage_3" value="keine der genannten Social Media Kanäle" id="button_20" onClick="onClick_Button(this)">keine der genannten Social Media Kanäle</button>
+                </div>
+            </div>
+            <div id="chart_5" class="swiper-slide page_bg">
+                <div class="buttonContainer"> 
+                    <button class="button" name="Frage_4" value="Coliquio" id="button_21" onClick="onClick_Button(this)">Coliquio</button>
+                    <button class="button" name="Frage_4" value="Esanum" id="button_22" onClick="onClick_Button(this)">Esanum</button>
+                    <button class="button" name="Frage_4" value="Andere Arzt-Community" id="button_23" onClick="onClick_Button(this)">Andere</button>
+                      <div style="margin-left: 60px;">
+                        <form>
+                            <input class="textInput" type="text" name="Frage_4" id="text_23" style="height: 50px; " onKeyUp="onChangeText(this)" onKeyDown="onKeyDown(event)">
+                        </form>
+					</div>
+                    <button class="button" name="Frage_4" value="keine der genannten Arzt-Communities" id="button_24" onClick="onClick_Button(this)">keine der genannten Arzt-Communities</button>
+                </div>
+            </div>
+            <div id="chart_6" class="swiper-slide page_bg">
+                <div class="buttonContainer" style="margin-left: 92px; margin-top: 480px">
+                    <div id="progress" >Daten werden gesendet. Bitte warten...
+                        <div id="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar
+        <div class="swiper-scrollbar"></div> -->
+    </div>
+    
+    <script src="js/swiper.js"></script>
+    <script src="js/veeva-library.js" type="text/javascript"></script>
+    <script src="js/call-clickstream.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/navigationManger.js"></script>
+    <script src="js/survey.js"></script>
+    <script id ="initSwiper">
+        var swiper = new Swiper ('.swiper-container', {
+            observer: true,
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+              dynamicBullets: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            keyboard: {
+                enabled: true,
+            },
+        });
+        
+        swiper.on('slideChangeTransitionStart', function(){
+            onSlideChangeHandler();
+        });
+        var swiperActiveIndex = swiper.activeIndex;
+  </script>
+   <script id="OnPageLoad">
+
+    // On Page Load
+    var active_index;
+
+    $(document).ready(function(){
+        onSlideChangeHandler();
+        //swiper.slideTo(2);
+        smallReset();
+    }) 
+</script> 
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: "UniversLTStd-LightCn";
+    src: url("UniversLTStd-LightCn.otf") format("opentype")
+}
+.swiper-container {
+    width: 1024px;
+    height: 768px;
+}
+
+.page_bg {
+    background-repeat: no-repeat;
+    background-size: 1024px 768px;
+}
+
+.body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "UniversLTStd-LightCn";
+     background-color:rgba(0,135,124,1);
+}
+
+.buttonContainer {
+    margin-top: 200px !important;
+    margin-left: 225px !important;
+}
+.button{
+    background-color:rgba(0,135,124,0.90);
+    background-image:url("../img/checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 20px;
+    border: solid thin rgba(110,206,178,0.8);
+    border-radius: 5px;
+    color: white;
+    height: 60px;
+    width: 560px;
+    padding-left: 60px;
+    padding-top: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "UniversLTStd-LightCn";
+    text-align: -webkit-left;
+}
+.active{
+    background-image:url("../img/checkbox_active.svg");  
+}
+.textInput{
+    height: 30px;
+    width: 484px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "UniversLTStd-LightCn";
+}
+#progress {
+  width: 100%;
+  color: white;
+}
+#bar {
+  width: 1%;
+  height: 30px;
+  background-color:darkslategrey;
+}
+#chart_1{background-image:url("../img/charts/chart_1.jpg")}
+#chart_2{background-image:url("../img/charts/chart_2.jpg")}
+#chart_3{background-image:url("../img/charts/chart_3.jpg")}
+#chart_4{background-image:url("../img/charts/chart_4.jpg")}
+#chart_5{background-image:url("../img/charts/chart_5.jpg")}
+#chart_6{background-image:url("../img/charts/chart_6.jpg")}
